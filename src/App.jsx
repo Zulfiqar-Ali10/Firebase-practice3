@@ -9,6 +9,7 @@ import { Login } from './Pages/Login';
 import { Navbar } from 'react-bootstrap';
 import { MyNavbar } from './assets/Componets/Navbar';
 import { List } from './Pages/List';
+import { Home } from './Pages/Home';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,7 @@ function App() {
  <div className="App">
         <MyNavbar/>
       <Routes>
-        <Route  path="/"  element={<h2>Home Page</h2>} />
+        <Route  path="/"  element={<Home />} />
         <Route  path="/register" element={ <Register /> } />
         <Route  path="/login" element={ <Login /> } />
         <Route  path="/book/list" element={ <List /> } />
